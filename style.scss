@@ -1,0 +1,132 @@
+$color-bg: #002f6c;
+$color-accent: #e0a800;
+$color-title: #002b7f;
+$color-highlight: #fedd00;
+
+$bp-sm: 576px;
+$bp-md: 768px;
+$bp-lg: 992px;
+
+@mixin responsive-img($max: 300px) {
+  width: 100%;
+  max-width: $max;
+  height: auto;
+}
+
+body {
+  background-color: $color-bg;
+  padding: 10px;
+  overflow-x: hidden;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+h1 {
+  color: $color-accent;
+  font-size: 60px;
+
+  @media (max-width: $bp-md) {
+    font-size: 40px;
+  }
+}
+
+h4 {
+  background-color: $color-bg;
+  color: $color-accent;
+}
+
+.logo {
+  @include responsive-img(100px);
+}
+
+.mi-imagen {
+  @include responsive-img(200px);
+
+  @media (max-width: $bp-md) {
+    @include responsive-img(300px);
+  }
+}
+
+.mi-imagen2 {
+  @include responsive-img(400px);
+
+  @media (max-width: $bp-md) {
+    @include responsive-img(300px);
+  }
+}
+
+.titulo {
+  color: $color-title;
+  background-color: $color-highlight;
+  padding: 10px;
+  border-radius: 8px;
+}
+
+main.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+section,
+article {
+  margin-bottom: 2rem;
+}
+
+nav {
+  ul {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    padding-left: 0;
+    list-style: none;
+
+    @media (max-width: $bp-md) {
+      flex-direction: column;
+      gap: 10px;
+    }
+  }
+}
+
+footer {
+  padding: 30px 15px;
+  text-align: center;
+}
+
+.destacados {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+a.nav-link {
+  transition: opacity .2s ease;
+  &:hover { opacity: .85; }
+}
+
+@mixin imagen-estandar($max-width: 300px) {
+  display: block;
+  width: 100%;
+  max-width: $max-width;
+  height: auto;
+  margin: 0 auto 1rem auto;
+}
+
+.productos img {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  margin: 0 auto 1rem;
+}
+
+@media (max-width: 768px) {
+  .galeria img,
+  .productos img {
+    max-width: 90vw;
+  }
+}
+
