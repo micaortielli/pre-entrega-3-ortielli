@@ -87,3 +87,44 @@ footer {
   gap: 1.5rem;
   margin-top: 2rem;
 }
+
+.card { 
+  transition: transform .2s ease, box-shadow .2s ease; 
+}
+
+.card:hover { 
+  transform: translateY(-4px); 
+  box-shadow: 0 12px 28px rgba(0,0,0,.15); 
+}
+
+.btn-outline-light {
+   border-color:#fff; 
+   color:#fff; 
+}
+
+.btn-outline-light:hover {
+   background:#fff;
+   color:#111; 
+}
+
+.galeria img, .productos img {
+   display:block; 
+   margin:0 auto 1rem; 
+   max-width:100%; 
+   height:auto; 
+}
+
+footer h4, footer h6 {
+   margin:0; 
+}
+
+.productos .card-img-top {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+.productos img {
+  max-width: none;
+  margin: 0;
+}

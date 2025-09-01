@@ -2,17 +2,20 @@
 <html lang="es">
 <head>
   <meta charset="UTF-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Taylor's Version</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Taylor's Version — FanShop</title>
+  <meta name="description" content="Catálogo de productos inspirados en Taylor Swift: remeras, buzos y accesorios.">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"/>
-  <link rel="stylesheet" href="../css/style.css"/>
+  <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="../style.css"/>
 </head>
 <body>
   <header class="bg-dark text-white p-3">
     <div class="container">
       <nav class="navbar navbar-expand-lg navbar-dark">
-        <a class="navbar-brand" href="../index.html">
-          <img src="../imagenes/diseño-logo.png" alt="Logo del sitio" class="logo"/>
+        <a class="navbar-brand d-flex align-items-center gap-2" href="../index.html">
+          <img src="../imagenes/logo.png" alt="Logo del sitio" class="logo"/>
+          <span class="fw-bold">FanShop</span>
         </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu" aria-controls="menu" aria-expanded="false" aria-label="Abrir menú">
           <span class="navbar-toggler-icon"></span>
@@ -20,7 +23,7 @@
         <div class="collapse navbar-collapse" id="menu">
           <ul class="navbar-nav ms-auto">
             <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
-            <li class="nav-item"><a class="nav-link active" href="taylorsversion.html">Taylor's Version</a></li>
+            <li class="nav-item"><a class="nav-link active" aria-current="page" href="taylorsversion.html">Taylor's Version</a></li>
             <li class="nav-item"><a class="nav-link" href="bokitasversion.html">Bokita's Version</a></li>
             <li class="nav-item"><a class="nav-link" href="dudas-frecuentes.html">Dudas Frecuentes</a></li>
             <li class="nav-item"><a class="nav-link" href="contacto.html">Contacto</a></li>
@@ -33,23 +36,112 @@
   <main class="container my-5">
     <h1 class="titulo">Taylor's Version</h1>
 
-    <section class="text-center galeria" aria-label="Galería de productos inspirados en Taylor">
-      <img src="../imagenes/fearless-tv.webp" alt="Portada del álbum Fearless (Taylor's Version)" class="img-fluid"/>
-      <img src="../imagenes/buzo-red.webp" alt="Buzo inspirado en la era RED de Taylor Swift" class="img-fluid"/>
-      <img src="../imagenes/tv-1989.webp" alt="Portada del álbum 1989 (Taylor's Version)" class="img-fluid"/>
-    </section>
+    <section class="mt-4" data-aos="fade-up">
+      <h2>Productos inspirados en Taylor Swift</h2>
 
-    <section class="mt-4">
-      <h2>Descubrí nuestros productos inspirados en Taylor Swift.</h2>
+      <div class="row g-4 mt-1 productos">
+
+        <article class="col-12 col-sm-6 col-lg-3">
+          <div class="card h-100 text-center">
+            <img src="../imagenes/Buzo-butdaddy.webp" class="card-img-top" alt="Buzo Taylor TTPD">
+            <div class="card-body d-flex flex-column">
+              <h3 class="h6">Buzo But Daddy I Love Him</h3>
+              <p class="fw-bold mb-4">$ 32.900</p>
+              <button class="btn btn-outline-dark mt-auto">Agregar</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="col-12 col-sm-6 col-lg-3">
+          <div class="card h-100 text-center">
+            <img src="../imagenes/remera-downbad.webp" class="card-img-top" alt="Remera Down Bad">
+            <div class="card-body d-flex flex-column">
+              <h3 class="h6">Remera Down Bad</h3>
+              <p class="fw-bold mb-4">$ 20.000</p>
+              <button class="btn btn-outline-dark mt-auto">Agregar</button>
+            </div>
+          </div>
+        </article>
+
+         <article class="col-12 col-sm-6 col-lg-3">
+          <div class="card h-100 text-center">
+            <img src="../imagenes/Buzo-iloveyou.webp" class="card-img-top" alt="Buzo I Love You">
+            <div class="card-body d-flex flex-column">
+              <h3 class="h6">Buzo I Love You Its Ruining My Life</h3>
+              <p class="fw-bold mb-4">$ 40.000</p>
+              <button class="btn btn-outline-dark mt-auto">Agregar</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="col-12 col-sm-6 col-lg-3">
+          <div class="card h-100 text-center">
+            <img src="../imagenes/buzo-rep.webp" class="card-img-top" alt="Buzo REP">
+            <div class="card-body d-flex flex-column">
+              <h3 class="h6">Buzo Starry Eyes</h3>
+              <p class="fw-bold mb-4">$ 29.500</p>
+              <button class="btn btn-outline-dark mt-auto">Agregar</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="col-12 col-sm-6 col-lg-3">
+          <div class="card h-100 text-center">
+            <img src="../imagenes/charms.webp" class="card-img-top" alt="Charms">
+            <div class="card-body d-flex flex-column">
+              <h3 class="h6">Pulsera Charms</h3>
+              <p class="fw-bold mb-4">$ 19.500</p>
+              <button class="btn btn-outline-dark mt-auto">Agregar</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="col-12 col-sm-6 col-lg-3">
+          <div class="card h-100 text-center">
+            <img src="../imagenes/buzo-red.webp" class="card-img-top" alt="Buzo RED (Taylor's Version)">
+            <div class="card-body d-flex flex-column">
+              <h3 class="h6">Buzo RED (Taylor's version)</h3>
+              <p class="fw-bold mb-4">$ 27.500</p>
+              <button class="btn btn-outline-dark mt-auto">Agregar</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="col-12 col-sm-6 col-lg-3">
+          <div class="card h-100 text-center">
+            <img src="../imagenes/tv-1989.webp" class="card-img-top" alt="Portada del álbum 1989 (Taylor's Version)">
+            <div class="card-body d-flex flex-column">
+              <h3 class="h6">1989 (Taylor's Version)</h3>
+              <p class="fw-bold mb-4">$ 29.900</p>
+              <button class="btn btn-outline-dark mt-auto">Agregar</button>
+            </div>
+          </div>
+        </article>
+
+        <article class="col-12 col-sm-6 col-lg-3">
+          <div class="card h-100 text-center">
+            <img src="../imagenes/fearless-tv.webp" class="card-img-top" alt="Portada del álbum Fearless (Taylor's Version)">
+            <div class="card-body d-flex flex-column">
+              <h3 class="h6">Fearless (Taylor's Version)</h3>
+              <p class="fw-bold mb-4">$ 28.900</p>
+              <button class="btn btn-outline-dark mt-auto">Agregar</button>
+            </div>
+          </div>
+        </article>
+      </div>
     </section>
   </main>
 
   <footer class="bg-dark text-white text-center py-4">
-    <h4>Seguinos en nuestras redes</h4>
-    <h6>2025 - Todos los derechos reservados</h6>
+    <h4 class="mb-2">Seguinos en nuestras redes</h4>
+    <h6 class="m-0">2025 - Sitio de práctica educativa (no oficial). Todos los derechos reservados</h6>
   </footer>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+  <script>AOS.init({ once:true, duration:800, easing:'ease-out' });</script>
 </body>
 </html>
+
+
 
